@@ -1,21 +1,46 @@
-<script>
-  // Arrays allow us to store lists of data in a collection.
-  //
-  // Start by having a read through this for a refresher => https://www.w3schools.com/js/js_arrays.asp
 
-  // Task 1: Create a variable called `newYearsResolutions` and set it's value to be a new array with at
-  // least 3 strings inside of it.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <p>Open the console in the browser to see the output of this script.</p>
+  <div class="out">
 
+  </div>
+  <script>
+    let Out = document.querySelector('.out')
+    // Arrays allow us to store lists of data in a collection.
+    //
+    // Start by having a read through this for a refresher => https://www.w3schools.com/js/js_arrays.asp
+  
+    // Task 1: Create a variable called `newYearsResolutions` and set it's value to be a new array with at
+    // least 3 strings inside of it.
+    
+    const newYearsResolutions = ['Learn more', ' Save money', ' Buy more books'];
+    console.log(newYearsResolutions);
+    Out.innerHTML += '<br>'+ newYearsResolutions
 
-  // Task 2: Create a new variable called `nextNewYearsResolution` and set it's value to the first
-  // item from the newYearsResolutions array (see the docs above for a hint on how to select items
-  // from arrays).
+    // Task 2: Create a new variable called `nextNewYearsResolution` and set it's value to the first
+    // item from the newYearsResolutions array (see the docs above for a hint on how to select items
+    // from arrays).
+    const nextNewYearsResolution = ['To travel', newYearsResolutions[1], ' Buy a new computer']
+    console.log(nextNewYearsResolution);
+    Out.innerHTML += '<br>'+ nextNewYearsResolution
+  
+    // Task 3: Use console.log() to print the 3rd item in the newYearsResolutions array without setting
+    // any variables.
+    console.log(newYearsResolutions[2]);
+  
+  
+  </script>
+  
+ 
+</body>
+</html>
 
-
-  // Task 3: Use console.log() to print the 3rd item in the newYearsResolutions array without setting
-  // any variables.
-
-
-</script>
-
-<p>Open the console in the browser to see the output of this script.</p>
