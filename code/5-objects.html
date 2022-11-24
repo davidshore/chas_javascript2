@@ -36,7 +36,9 @@
   // Task 4: You can add a property to an object using the dot notation and using assignment to
   // set a its value. Do this to add a new property to the person object with the key `eyeColor`
   // and value being a string with the color of your eyes.
-  let eyeColor = 'blue'
+  person['eyeColor'] = 'blue' ;
+  console.log(person.eyeColor);
+  console.log(person);
 
 
   // Task 5: Objects can be nested within other objects. To fetch a value, you must chain
@@ -53,7 +55,10 @@
       }
     }
   }
-
+console.log(dogs.labrador.puppy.name);
+/* Or */
+let dogName = dogs.labrador.puppy.name;
+console.log(dogName);
 </script>
 
 <p>Open the console in the browser to see the output of this script.</p>
