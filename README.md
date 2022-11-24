@@ -1,5 +1,7 @@
 # JavaScript 2
 
+## Viktor Risinger
+
 This assignment should help you build on your JavaScript skills through a small set of challenges which are independent of each other.
 
 ## How to complete this assignment
