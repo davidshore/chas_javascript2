@@ -25,11 +25,11 @@
   // for how to make a string uppercase). Use .forEach to run the function for each
   // dog in the dogs array.
   function printDogNameUppercase(dogName) {
-    let uppercaseDog = dog.toUpperCase();
+    let uppercaseDog = dogName.toUpperCase();
     console.log("The " + uppercaseDog + " barks.")
   }
   dogs.forEach(dog => {
-    printDogNameUppercase(uppercaseDog)
+    printDogNameUppercase(dog)
   })
 
   // Task 3: Write a forEach function which uses an anonymous function instead of defining a
