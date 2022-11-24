@@ -54,7 +54,7 @@
   const remove = months.pop();
   console.log(months);
   console.log(remove);
-
+/* OR */
   months.pop()
   console.log(months);
 
@@ -62,7 +62,9 @@
   // Task 6: Using splice(), you can remove items from the middle of arrays. It requires two
   // arguments; first, the index from where you'd like to start deleting, and second, the
   // number of items you'd like to delete. Use .splice() to remove "Jul" from the months array.
-  months.splice(months-3)
+
+  const removeItem = months.splice(6,1)
+  console.log(removeItem);
   console.log(months);
 
 </script>
