@@ -13,11 +13,18 @@
 
   // Task 1: Write a .forEach function which iterates through the products
   // and uses console.log() to print the name and brand of each item.
-
+    const x = products.forEach((products) => {
+     console.log(products.name, products.brand);
+    })
 
   // Task 2: Use .map() to iterate over the products and return the model from
   // each product. Assign the result to a variable called `models` and use console.log()
   // to print it.
+    const y = products.map((products) => {
+     return (products.model);
+    })
+  
+  console.log(y);
 
   
 </script>
