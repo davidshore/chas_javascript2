@@ -14,14 +14,23 @@
   // value. Add two more properties (keys and values) to the object; one called name which
   // should store your name as a string, and one called age which should store
   // your age as a number.
-  const person = {
-    studentAt: "Technigo",
-    name: 'Linnéa Svensson',
-    age: 33,
-    favouriteFoods: ['Sushi', 'Ramen', 'Fried rice']
+
+  class Person {
+    constructor(studentAt, name, age, favouriteFoods){
+      this.studentAt = studentAt;
+      this.name = name;
+      this.age = age;
+      this.favouriteFoods = favouriteFoods;
+    }
+
+    printNameAge(){
+      console.log(`Name: ${this.name}. Age: ${this.age}`)
+    }
   }
 
-  console.log(person)
+  const person = new Person('Technigo', 'Linnéa Svensson', 33, ['Sushi', 'Ramen', 'Fried Rice'])
+
+  console.log(person);
 
   // Task 2: Add a fourth property to the object using the key `favoriteFoods`. Its value
   // should be an array of strings with some foods you like.
@@ -30,7 +39,7 @@
   // Task 3: Use the dot notation to print the name and age properties from the person
   // object using console.log.
 
-  console.log(person.name + ' ' + person.age);
+  person.printNameAge();
 
 
   // Task 4: You can add a property to an object using the dot notation and using assignment to
@@ -38,25 +47,42 @@
   // and value being a string with the color of your eyes.
 
   person.eyeColor = 'brown';
-  console.log(person);
+  console.log(person.eyeColor);
 
 
   // Task 5: Objects can be nested within other objects. To fetch a value, you must chain
   // the dot notation. For example, you could select the entire `adult` object from the
   // `dog` object below using the notation `dog.labrador.adult`. Using the dog object below,
   // use console.log() to print the name of the puppy (so it should print "Buster").
-  const dogs = {
-    labrador: {
-      adult: {
-        name: "Marley"
-      },
-      puppy: {
-        name: "Buster"
+
+  class Dogs {
+    constructor(adultName, puppyName){
+      this.labrador = {
+        adult: {
+          name: adultName
+        },
+        puppy: {
+          name: puppyName
+        }
       }
     }
   }
 
-  console.log(dogs.labrador.puppy.name);
+  const dogs = new Dogs('Marley', 'Buster');
+
+  console.log(dogs);
+
+  //OR
+
+  // class Dogs {
+  //   constructor(breed){
+  //     this.breed = breed;
+  //   }
+  // }
+
+  // const dogs = new Dogs({labradore: {adult: {name: 'Marley'}, puppy: {name: 'Buster'}}});
+
+  // console.log(dogs.breed);
 
 </script>
 
