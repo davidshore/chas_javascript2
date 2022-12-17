@@ -16,17 +16,44 @@
   // Task 1: Pass the printDogName function into a .forEach call on the `dogs` array, to
   // make it print "The {dogName} barks." for each item in the array.
 
+dogs.forEach((dogname)=>{
+
+console.log("the "+dogname + " barks");
+
+})
+
 
   // Task 2: Create a new function called `printDogNameUppercase` which works similarly
   // to the `printDogName` function but makes the string uppercase. (See https://www.w3schools.com/jsref/jsref_touppercase.asp
   // for how to make a string uppercase). Use .forEach to run the function for each
   // dog in the dogs array.
 
+const printDogNameUpperCase =(name)=> {
+    
+  console.log(name.toUpperCase());
+  
+}
 
-  // Task 3: Write a forEach function which uses an anonymous function instead of defining a
+dogs.forEach((dname) =>{
+
+  printDogNameUpperCase(dname)
+
+})
+  
+ // Task 3: Write a forEach function which uses an anonymous function instead of defining a
   // named function like the examples above (hint; the lecture material used anonymous functions)
   // and uses console.log to print "The {dogName} needs to go for a walk!".
+function func(){
 
+ dogs.forEach((dname) => {
+
+  console.log("the"+ {dname} +"needs to go for a walk")
+
+})
+
+}
+
+func()
 
 </script>
 
