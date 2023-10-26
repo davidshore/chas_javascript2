@@ -6,7 +6,24 @@ This assignment should help you build on your JavaScript skills through a small 
 
 In the `code` folder, you'll find a number of tasks in html files. Go through each file and follow the instructions. Links to documentation for specific tasks can be found in the comments in the task files.
 
-To complete this assignment, you need to fork this repository, make changes to your copy, and then submit a pull request on GitHub (from your repository into the Technigo one) for review. [Read the guide on GitHub](https://guides.github.com/activities/forking/) for more info on how to do this.
+### Setup repo in Github 
+
+1. Create a Github repo.
+2. Upload your files to Github:
+
+```
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin <Adressen till ditt repo>
+git push -u origin main
+```
+
+### How to hand in the assignment
+
+Click the link in canvas and input the link to your repo repo.
+
 
 ### :books: Reading List
 
@@ -37,6 +54,5 @@ After completing this assignment, you should be getting fairly used to the core 
 
 Done with the main task? Here's some ideas for things to continue with:
 
-- Follow the same instructions from the first assignment to re-write all of the challenges using es5.
 - Read about [JavaScript Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes) and make a copy of 5-objects.html called 5-classes.html and try to convert all of the tasks in there to use a Person and Dog class.
 - Build upon the Person class; write a function in the Person class which prints the name and age of the person when invoked.
